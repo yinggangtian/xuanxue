@@ -1,0 +1,20 @@
+[project]
+name = "xuanxue"
+version = "0.1.0"
+description = "玄学预测系统 - 多模型AI分析"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+    "aiohttp>=3.9.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+xuanxue = "main:main"
+setup-keys = "setup_api_keys:main"
+test-api = "test_api:main"
+
+[tool.uv]
+dev-dependencies = []
